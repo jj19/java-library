@@ -1,38 +1,29 @@
 public class Book {
 
-    public static String title;
-    public boolean borrowed;
-    Book(String bookTitle){
+    private String title;
+    private boolean borrowed;
+
+    public Book(String bookTitle) {
         this.title = bookTitle;
-    }
-
-
-    // Creates a new Book
-    public Book() {
-        // Implement this method
     }
 
     // Marks the book as rented
     public void borrowed() {
-        // Implement this method
         this.borrowed = true;
     }
 
     // Marks the book as not rented
     public void returned() {
-        // Implement this method
         this.borrowed = false;
     }
 
     // Returns true if the book is rented, false otherwise
     public boolean isBorrowed() {
-        // Implement this method
         return borrowed;
     }
 
     // Returns the title of the book
     public String getTitle() {
-        // Implement this method
         return title;
     }
 
